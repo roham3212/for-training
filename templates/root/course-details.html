@@ -1,9 +1,6 @@
-{% extends 'base.html'%}
-{% block 'title' %}course_details{% endblock 'title'%}
-
-
-
-{% block 'content' %}
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content'%}
 
 
   <main id="main">
@@ -22,7 +19,7 @@
 
         <div class="row">
           <div class="col-lg-8">
-            <img src="assets/img/course-details.jpg" class="img-fluid" alt="">
+            <img src="{% static 'assets/img/course-details.jpg' %}" class="img-fluid" alt="">
             <h3>Et enim incidunt fuga tempora</h3>
             <p>
               Qui et explicabo voluptatem et ab qui vero et voluptas. Sint voluptates temporibus quam autem. Atque nostrum voluptatum laudantium a doloremque enim et ut dicta. Nostrum ducimus est iure minima totam doloribus nisi ullam deserunt. Corporis aut officiis sit nihil est. Labore aut sapiente aperiam.
@@ -33,7 +30,7 @@
               <div class="row">
                 <div class="col-lg-5 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                   <div class="thumb">
-                    <a href="#"><img class="img-fluid" src="assets/img/blog/prev.jpg" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="{% static 'assets/img/blog/prev.jpg' %}" alt=""></a>
                   </div>
                   <div class="arrow">
                     <a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
@@ -56,7 +53,7 @@
                     <a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
                   </div>
                   <div class="thumb">
-                    <a href="#"><img class="img-fluid" src="assets/img/blog/next.jpg" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="{% static 'assets/img/blog/next.jpg' %}" alt=""></a>
                   </div>
                 </div>
               </div>
@@ -214,4 +211,5 @@
 
   </main><!-- End #main -->
 
-  {% endblock 'content' %}  
+  
+{% endblock 'content'%}
